@@ -33,7 +33,6 @@
 - **3D 몰입형 UI**: React Three Fiber 기반 3D 바다 환경
 - **날씨 연동 UI**: 실시간 날씨에 따른 바다, 하늘, 파티클 효과 자동 변화
 - **시간대별 씬 전환**: 새벽 → 일출 → 낮 → 일몰 → 밤
-- **AI 추천 BGM**: 날씨와 시간대 기반 배경음악 추천
 - **실시간 접속자 수**: 현재 접속 중인 사용자 수 표시
 - **답글 실시간 전송**: WebSocket을 통한 실시간 답글 애니메이션
 
@@ -68,7 +67,7 @@
 | 서비스 | 역할 | 주요 기술 |
 |--------|------|-----------|
 | **Member Service** | OAuth2 기반 인증/인가, 접속자 수 관리, 위치 기반 매칭 | Spring Security, OAuth2, JWT |
-| **Weather-BGM Service** | 기상청 API 연동, Scene 이펙트 결정, AI BGM 추천 | WebClient, 외부 API 연동 |
+| **Weather-BGM Service** | 기상청 API 연동, Scene 이펙트 결정 | WebClient, 외부 API 연동 |
 | **Batch Service** | 실시간 데이터 수집, 세션 생명주기 관리, 통계 처리 | Spring Batch |
 | **Realtime Service** | WebSocket 연결 관리, 실시간 푸시, 사용자 위치 수집 | STOMP, SockJS |
 | **Bottle Service** | 유리병 편지 CRUD, 좌표 이동 로직, 소멸 규칙 관리 | Redis GEO |
